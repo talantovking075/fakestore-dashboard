@@ -12,11 +12,11 @@ async function fetchAndShowData() {
 
       return `
         <tr>
-          <td>${id}</td>
-          <td>${title}</td>
-          <td>${category}</td>
-          <td>${description}</td>
-          <td>$${price}</td>
+          <td class="product-id">${id}</td>
+          <td class="product-title">${title}</td>
+          <td class="product-category">${category}</td>
+          <td class="product-description">${description}</td>
+          <td class="product-price">$${price}</td>
           <td><img width="80" src="${image}" alt="${title}" class="product-image"></td>
           <td>
             <button class="dashboard__view__btn" data-id="${id}">View</button>

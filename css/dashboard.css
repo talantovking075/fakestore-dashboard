@@ -3,7 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Arial, sans-serif;
+  
 }
+@font-face {
+      font-family: 'Zalando Sans Expanded';
+      font-style: normal;
+      font-weight: 200 900;
+      font-display: swap;
+      src: url('https://cdn.jsdelivr.net/fontsource/fonts/zalando-sans-expanded:vf@latest/latin-wght-normal.woff2') format('woff2-variations');
+    }
 
 body {
   background: #0d1117;
@@ -42,6 +50,12 @@ body {
 }
 
 .dashboard__title {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 605px;
   font-size: 28px;
   font-weight: bold;
   color: #007bff;
@@ -89,9 +103,13 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-weight: 600;
   transition: all 0.3s ease;
-  margin-top: 604px;
+  margin-top: 605px;
 }
+
+
 
 .login-btn:hover {
   background: #007bff;
@@ -354,4 +372,22 @@ textarea:focus {
 }
 .product-image {
   border: none;
+}
+
+.product-id, .product-title, .product-category, .product-description, .product-price {
+  font-size: 16px;
+  color: #c9d1d9;
+  font-size: 16px;
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 605px;
+} 
+
+.product-title{
+  font-size: large;
+  width: 200px;
+}
+.product-description{
+  width: 800px;
 }
