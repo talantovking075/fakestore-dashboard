@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Products</title>
-
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
@@ -12,12 +12,53 @@
     <div class="logo">
       <div class="logo-img">D</div>
       <div class="logo-title">Dashboard</div>
-    </div>
+    </div class="Menu_UI">
     <div class="menu-item active">Overview</div>
     <div class="menu-item">Profile</div>
     <div class="menu-item">Products</div>
     <div class="menu-item">Settings</div>
     <a href="../index.html" class="login-btn">Chiqish</a>
+  </div>
+
+  <div id="editModal" class="edit-modal">
+    <div class="edit-modal-content">
+      <div class="edit-modal-header">
+        <h2>Mahsulotni tahrirlash</h2>
+        <span class="edit-close">×</span>
+      </div>
+
+      <form id="editProductForm">
+        <div class="edit-form-group">
+          <label for="editTitle">Title</label>
+          <input type="text" id="editTitle" required>
+        </div>
+
+        <div class="edit-form-group">
+          <label for="editPrice">Price</label>
+          <input type="number" step="0.01" id="editPrice" required>
+        </div>
+
+        <div class="edit-form-group">
+          <label for="editDescription">Description</label>
+          <textarea id="editDescription" required></textarea>
+        </div>
+
+        <div class="edit-form-group">
+          <label for="editCategory">Category</label>
+          <input type="text" id="editCategory" required>
+        </div>
+
+        <div class="edit-form-group">
+          <label for="editImage">Image URL</label>
+          <input type="url" id="editImage" placeholder="https://..." required>
+        </div>
+
+        <div class="edit-form-buttons">
+          <button type="button" class="edit-cancel-btn">Bekor qilish</button>
+          <button type="submit" class="edit-save-btn">Saqlash</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <div class="main-content">
