@@ -134,3 +134,14 @@ body {
   padding: 40px;
   min-height: 100vh;
 }
+
+  .table-container {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            overflow-x: auto;
+            text-align: center;
+            margin-bottom: 20px;
+  color: #60a5fa;
+}
